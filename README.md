@@ -2,4 +2,4 @@
 
 Hi There I hope you like what you see
 
-link: https://sebastianp95.github.io/mysite1/
+link: https://sebastianp95.github.io/
