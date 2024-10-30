@@ -500,10 +500,12 @@ a.active {
 
 #intro {
 
-    background: url(../img/minimal-black-coffe-cup.jpg);
+    /* background: url(../img/minimal-black-coffe-cup.jpg); */
+    background-image: url('https://sebastianp95.github.io/img/minimal-black-coffe-cup.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-color: #000;
     color: #000;

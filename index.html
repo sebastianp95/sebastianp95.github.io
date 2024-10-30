@@ -92,6 +92,12 @@
                     </div>
                     <div>
                         <ul class="list-inline social-buttons animated fadeIn">
+                             <!-- LinkedIn Button -->
+                            <li><a id="linkedin" href="https://www.linkedin.com/in/sebastianperez95/" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                            <!-- GitHub Button -->
+                            <li><a id="github" href="https://github.com/sebastianp95" target="_blank"><i
+                                        class="fa fa-github"></i></a></li>
                             <!-- Facebook Button -->
                             <li><a id="facebook" href="https://www.facebook.com/sebastian.perez.95" target="_blank"><i
                                         class="fa fa-facebook"></i></a></li>
@@ -104,12 +110,6 @@
                              Codepen Button 
                             <li><a id="codepen" href="http://codepen.io/sebastianp95/" target="_blank"><i
                                         class="fa fa-codepen"></i></a></li> -->
-                            <!-- GitHub Button -->
-                            <li><a id="github" href="https://github.com/sebastianp95" target="_blank"><i
-                                        class="fa fa-github"></i></a></li>
-                            <!-- LinkedIn Button -->
-                            <li><a id="linkedin" href="https://www.linkedin.com/in/sebastianperez95/" target="_blank"><i
-                                        class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
                             <div class="col-md-12">
                                 <h2>Check out my résumé</h2>
                                 <div id="resume-button">
-                                    <a class="resume-btn wp4" href="resume2.pdf" target="_blank">Resume</a>
+                                    <a class="resume-btn wp4" href="resume.pdf" target="_blank">Resume</a>
                                 </div>
                             </div>
                         </div>
@@ -209,6 +209,19 @@
                 </div>
                 <div class="row portfolio-row">
                     <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#WGModal">
+                            <div class="portfolio-overlay"></div>
+                            <div class="links">
+                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
+
+                            </div>
+                            <img src="img/wgbanner.png" alt="image">
+                            <div class="portfolio-info">
+                                <h3>WG Underground</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item-wrapper wp5">
                         <div class="portfolio-item" data-toggle="modal" href="#macysModal">
                             <div class="portfolio-overlay"></div>
                             <div class="links">
@@ -222,13 +235,26 @@
                         </div>
                     </div>
                     <div class="portfolio-item-wrapper wp5">
+                        <div class="portfolio-item" data-toggle="modal" href="#petpilotModal">
+                            <div class="portfolio-overlay"></div>
+                            <div class="links">
+                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
+
+                            </div>
+                            <img src="img/petpilotbanner.jpeg" alt="image">
+                            <div class="portfolio-info">
+                                <h3>PetPilot</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item-wrapper wp5">
                         <div class="portfolio-item" data-toggle="modal" href="#setaModal">
                             <div class="portfolio-overlay"></div>
                             <div class="links">
                                 <a class="image-link"><i class="fa fa-search-plus"></i></a>
 
                             </div>
-                            <img src="img/vet1.png" alt="image">
+                            <img src="img/setabanner.PNG" alt="image">
                             <div class="portfolio-info">
                                 <h3>Seta Solutions</h3>
                             </div>
@@ -327,6 +353,50 @@
             </div>
         </section>
         <!--************************** PORTFOLIO MODALS **************************-->
+        <!-- WG MODAL -->
+         <div class="modal fade" id="WGModal" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">WG Underground</h4>
+                            <h6 class="modal-title-description">Employee Tracking Platform</h6>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <img class="img-responsive img-centered" src="img/wgbanner.png" alt="">
+                            </p>
+                            <p class="modal-description">
+                                As a Fullstack Developer at WG Underground, I developed and deployed an Employee Tracking 
+                                Platform to streamline WG Underground's construction operations. The platform included a 
+                                React Native mobile app for field operators and a React web app for administrators, backed 
+                                by Java and Spring Boot for secure user authentication and data flow. I integrated RESTful 
+                                APIs to enable real-time job tracking, resource allocation, and automated reporting. Collaborating 
+                                closely with the team, I contributed across all stages, from planning to deployment, ensuring a robust 
+                                and scalable solution.
+                            </p>
+                            <p class="modal-description">
+                                <strong>Technologies used:</strong>
+                                <span class="tech-used">React Native</span>
+                                <span class="tech-used">Java</span>
+                                <span class="tech-used">Springboot</span>
+                                <span class="tech-used">Expo</span>
+                                </br>
+                            </p>
+                            <p class="visit">
+                                <a href="https://wg-idig.com/" target="_blank" id="visit-btn">Visit Site</a> 
+                                <!-- <a href="https://github.com/sebastianp95/vet-backend" target="_blank" id="visit-btn">View
+                                    Source</a> -->
+                            </p>
+    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+         </div>
         <!-- Macys MODAL -->
         <div class="modal fade" id="macysModal" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
             aria-hidden="true">
@@ -342,10 +412,11 @@
                             <img class="img-responsive img-centered" src="img/macys.jpg" alt="">
                         </p>
                         <p class="modal-description">
-
-                            During my time at Macy's, I used Java to propose and create scalable API solutions and
-                            orchestration services. Additionally, I have experience with React for creating
-                            user-friendly interfaces.
+                            During my time at Macy’s, I developed scalable API solutions and orchestration services using 
+                            Java to support a large-scale warehouse management system. I created responsive web and mobile 
+                            interfaces with React, delivering user-friendly experiences for warehouse operations. I also led 
+                            the development of a data coordination system bridging on-premises and cloud databases, collaborating 
+                            closely with cross-functional teams to integrate services and tackle complex technical challenges.
                         </p>
                         <p class="modal-description">
                             <strong>Technologies used:</strong>
@@ -367,36 +438,34 @@
                 </div>
             </div>
         </div>
-
-        <!-- Seta MODAL -->
-        <div class="modal fade" id="setaModal" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
+        <!-- PetPilot MODAL -->
+        <div class="modal fade" id="petpilotModal" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Seta Solutions</h4>
+                        <h4 class="modal-title">PetPilot</h4>
                         <h6 class="modal-title-description">Commercial Website</h6>
                     </div>
                     <div class="modal-body">
                         <p>
-                            <img class="img-responsive img-centered" src="img/vet1.png" alt="">
+                            <img class="img-responsive img-centered" src="img/petpilotbanner.jpeg" alt="">
                         </p>
                         <p class="modal-description">
-                            As a developer at Seta, I was responsible for the design, development, and deployment of a
-                            veterinary website. I built and modeled the database to ensure efficient and secure storage
-                            of client information. To manage security, I utilized JSON Web Tokens (JWT) and Spring
-                            Security. Additionally, I developed a secure API that allowed for seamless communication
-                            between the frontend and backend. The user interface was built using React, which provided a
-                            user-friendly and responsive experience for clients. Throughout the project, I prioritized
-                            good development practices to ensure the website is reliable, scalable, and secure
+                            I led the design, development, and deployment of PetPilot, a comprehensive veterinary 
+                            software for clinic management. PetPilot provides seamless tools for appointment scheduling, 
+                            inventory management, and clinical records with AI-assisted diagnostics. I implemented 
+                            Spring Security and JWT to ensure data security and built an intuitive, responsive React 
+                            interface. This all-in-one platform empowers clinics with streamlined operations, including 
+                            vaccination tracking and detailed pet health reporting.
                         </p>
                         <p class="modal-description">
                             <strong>Technologies used:</strong>
                             <span class="tech-used">React</span>
                             <span class="tech-used">Java</span>
-                            <span class="tech-used">Vercel</span>
-                            <span class="tech-used">Railway</span>
+                            <span class="tech-used">Spring Framework</span>
+                            <span class="tech-used">AWS S3</span>
                             </br>
                         </p>
                         <p class="visit">
@@ -412,6 +481,49 @@
                 </div>
             </div>
         </div>
+        <!-- Seta MODAL -->
+        <div class="modal fade" id="setaModal" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Seta Solutions</h4>
+                            <h6 class="modal-title-description">Commercial Website</h6>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <img class="img-responsive img-centered" src="img/setabanner.PNG" alt="">
+                            </p>
+                            <p class="modal-description">
+                                At Seta Solutions, we offer custom software solutions tailored to diverse 
+                                client needs, from web applications to specialized business tools. With a 
+                                focus on reliability and scalability, we prioritize creating impactful, 
+                                user-centric applications. Explore our website to see our AI-powered quote 
+                                generator in action and learn more about our approach to innovative software development.
+                            </p>
+                            <p class="modal-description">
+                                <strong>Technologies used:</strong>
+                                <span class="tech-used">Next.js</span>
+                                <span class="tech-used">React</span>
+                                <span class="tech-used">openAI API</span>
+                                <span class="tech-used">Tailwind</span>
+                                </br>
+                            </p>
+                            <p class="visit">
+                                <a href="https://www.setasolutions.com.co/" target="_blank" id="visit-btn">Visit Site</a>
+                                 <!-- or
+                                <a href="https://github.com/sebastianp95/vet-backend" target="_blank" id="visit-btn">View
+                                    Source</a> -->
+                            </p>
+    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+         </div>
         <!-- GOLF MODAL -->
         <div class="modal fade" id="golfAcademyModal" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
             aria-hidden="true">
