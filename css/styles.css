@@ -1,4 +1,4 @@
-* {
+    * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -812,8 +812,7 @@ a.fa.fa-angle-down:focus {
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    display;
-    block;
+    display: block;
     color: #FFF;
     font-size: 55px;
     text-align: center;
@@ -1403,9 +1402,24 @@ a.resume-btn:active {
 }
 
 @media (max-width: 950px) {
-    #portfolio .portfolio-row {
-        margin-left: 0px;
-        margin-right: 0px;
+    #portfolio .portfolio-item-wrapper {
+        width: 47%;
+    }
+    
+    #portfolio .portfolio-item,
+    #portfolio .portfolio-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 630px) {
+    #portfolio .portfolio-item-wrapper {
+        width: 100%;
+    }
+    
+    #portfolio .portfolio-item,
+    #portfolio .portfolio-item img {
+        height: 350px;
     }
 }
 
@@ -1427,22 +1441,6 @@ a.resume-btn:active {
     vertical-align: top;
 }
 
-#portfolio .portfolio-item-wrapper img {
-    min-height: 200px;
-}
-
-@media (max-width: 950px) {
-    #portfolio .portfolio-item-wrapper {
-        width: 47%;
-    }
-}
-
-@media (max-width: 630px) {
-    #portfolio .portfolio-item-wrapper {
-        width: 100%;
-    }
-}
-
 #portfolio .portfolio-item {
     display: block;
     -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
@@ -1452,11 +1450,16 @@ a.resume-btn:active {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    /* Fixed height to maintain consistent dimensions */
+    height: 300px;
 }
 
 #portfolio .portfolio-item img {
     max-width: 100%;
     width: 100%;
+    /* Fixed height with object-fit to maintain aspect ratio */
+    height: 300px;
+    object-fit: cover;
     opacity: 1.0;
     transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
@@ -1716,7 +1719,6 @@ a.resume-btn:active {
         padding: 60px 0px;
     }
 }
-*/
 
 
 /* ======= CONTACT ======= */
@@ -1752,7 +1754,6 @@ a.resume-btn:active {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    /*border-radius: 30px;*/
     border: 2px solid #000;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
@@ -1792,10 +1793,8 @@ ul.social-buttons li a {
     font-size: 24px;
     line-height: 50px;
     outline: 0;
-    /* color: rgba(255, 255, 255, 0.8); */
     color: #333;
     background: #F0F0F0;
-    /*border-radius: 50%;*/
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -1848,7 +1847,6 @@ ul.social-buttons li a:active {
 #github,
 #pinterest,
 #spotify {
-    /*border: 1px solid #fff !important;*/
 }
 
 #facebook:hover {
@@ -1915,7 +1913,6 @@ ul.social-buttons li a:active {
 .copyright p {
     font-family: "Lato", sans-serif;
     font-size: 14px;
-    /*text-transform: uppercase;*/
 }
 
 @media screen and (max-width: 480px) {
