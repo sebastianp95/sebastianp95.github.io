@@ -1450,14 +1450,12 @@ a.resume-btn:active {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    /* Fixed height to maintain consistent dimensions */
     height: 300px;
 }
 
 #portfolio .portfolio-item img {
     max-width: 100%;
     width: 100%;
-    /* Fixed height with object-fit to maintain aspect ratio */
     height: 300px;
     object-fit: cover;
     opacity: 1.0;
@@ -2051,4 +2049,47 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+/* Tablet Styles */
+@media (max-width: 991px) {
+    #portfolio .portfolio-item-wrapper {
+        width: 47%;
+        margin: 0 1.5% 30px;
+    }
+    
+    #portfolio .portfolio-item,
+    #portfolio .portfolio-item img {
+        height: 280px;
+    }
+}
+
+/* Large Mobile Styles */
+@media (max-width: 767px) {
+    #portfolio .portfolio-item-wrapper {
+        width: 80%;
+        margin: 0 auto 30px;
+        display: block;
+    }
+    
+    #portfolio .portfolio-item,
+    #portfolio .portfolio-item img {
+        height: 350px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    #portfolio .portfolio-item-wrapper {
+        width: 95%;
+    }
+    
+    #portfolio .portfolio-item,
+    #portfolio .portfolio-item img {
+        height: 250px;
+    }
+    
+    #portfolio .portfolio-info h3 {
+        font-size: 12px;
+    }
 }
